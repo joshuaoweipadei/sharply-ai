@@ -14,6 +14,47 @@
   color-scheme: dark;
 }
 
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat leading-7 text-muted2 text-[17px];
+  }
+}
+
+.app {
+  @apply relative z-0 bg-dark;
+}
+.container {
+  @apply max-w-7xl w-full mx-auto sm:px-16 px-6
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -105,144 +146,3 @@
   opacity: 1;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
-/* .main {
-  width: 100vw;
-  min-height: 100vh;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  padding: 120px 24px 160px 24px;
-  pointer-events: none;
-  background-color: #000;
-} */
-
-@layer utilities {
-  .padding {
-    @apply sm:px-16 px-8 sm:py-24 py-12;
-  }
-
-  .padding-x {
-    @apply sm:px-16 px-8;
-  }
-
-  .padding-y {
-    @apply sm:py-24 py-12;
-  }
-
-  .padding-l {
-    @apply sm:pl-16 pl-8;
-  }
-
-  .padding-r {
-    @apply sm:pr-16 pr-8;
-  }
-
-  .padding-t {
-    @apply sm:pt-24 pt-12;
-  }
-
-  .padding-b {
-    @apply sm:pb-24 pb-12;
-  }
-
-  .info-text {
-    @apply font-montserrat leading-7 text-muted2 text-[17px];
-  }
-}
-
-
-.app {
-  @apply relative z-0 bg-dark;
-}
-.container {
-  @apply max-w-7xl w-full mx-auto sm:px-16 px-6
-}
-/* 
-
-
-.flex-center {
-  @apply flex justify-center items-center;
-}
-
-.flex-start {
-  @apply flex justify-start items-start;
-}
-
-.flex-end {
-  @apply flex justify-end items-center;
-}
-
-.flex-between {
-  @apply flex justify-between items-center;
-} */
-
-/* .banner {
-  background: url(	https://robogard-temp.netlify.app/images/header-bg/header-5.png) no-repeat top center;
-  background-size: cover;
-  height: 700px;
-  position: relative;
-  width: 100%;
-}
-.banner-subTitle {
-  color: cyan;
-  font-size: 18px;
-  font-weight: 600;
-  position: relative;
-  padding-left: 90px;
-}
-.banner-subTitle::before {
-  content: '';
-  position: absolute;
-  width: 80px;
-  height: 2px;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #00ccff;
-}
-
-
-
-@media (min-width: 1025px) {
-  .testimonies {
-    background-attachment: fixed;
-  }
-}
-
-.testimonies {
-  background-image: url(https://templatekit.jegtheme.com/konfero/wp-content/uploads/sites/412/2023/09/cinematic-image-of-a-conference-meeting-1-1-e1694680895947.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  padding: 140px 0px 0px 0px;
-  z-index: 0;
-  position: relative;
-}
-
-.testimonies-bg-overlay {
-  @apply h-full w-full top-0 left-0 absolute;
-  background-color: transparent;
-  background-image: linear-gradient(180deg, #FFFFFF00 0%, #09031E 100%);
-  opacity: 0.9;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-}
-@media (min-width: 768px){
-  .testimonies-inner {
-    width: 100%;
-  }
-}
-.testimonies-innerTwo {
-  background-color: transparent;
-  background-image: linear-gradient(160deg, #A5A5A547 0%, #09031E9E 100%);
-  border-radius: 30px 30px 0px 0px;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  border-style: none;
-  margin: 0% 40% 0% 1%;
-  padding: 50px 50px 50px 50px;
-  position: relative;
-  width: 100%;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  display: flex;
-} */
